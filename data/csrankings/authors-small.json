@@ -1,0 +1,834 @@
+[
+        {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "aaai",
+        "count": "1.0",
+        "adjustedcount": "0.1",
+        "year": "2020"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "chiconf",
+        "count": "1.0",
+        "adjustedcount": "0.16667",
+        "year": "2011"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "cvpr",
+        "count": "1.0",
+        "adjustedcount": "0.125",
+        "year": "2018"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "eccv",
+        "count": "1.0",
+        "adjustedcount": "0.11111",
+        "year": "2020"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "eurosys",
+        "count": "2.0",
+        "adjustedcount": "0.36667",
+        "year": "2013"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "fse",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2011"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "iccv",
+        "count": "2.0",
+        "adjustedcount": "0.66667",
+        "year": "2021"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icde",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2002"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icde",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2005"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icde",
+        "count": "2.0",
+        "adjustedcount": "0.5",
+        "year": "2007"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icde",
+        "count": "1.0",
+        "adjustedcount": "0.14286",
+        "year": "2008"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icde",
+        "count": "2.0",
+        "adjustedcount": "0.58333",
+        "year": "2010"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icde",
+        "count": "2.0",
+        "adjustedcount": "0.83333",
+        "year": "2011"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icde",
+        "count": "2.0",
+        "adjustedcount": "0.5",
+        "year": "2012"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icde",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2013"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icde",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2014"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icde",
+        "count": "3.0",
+        "adjustedcount": "0.52778",
+        "year": "2018"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icde",
+        "count": "2.0",
+        "adjustedcount": "0.35",
+        "year": "2019"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icde",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2020"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "kdd",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2021"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "mobicom",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2006"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "mobicom",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2008"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "mobisys",
+        "count": "1.0",
+        "adjustedcount": "0.16667",
+        "year": "2008"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "mobisys",
+        "count": "1.0",
+        "adjustedcount": "0.16667",
+        "year": "2012"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "mobisys",
+        "count": "1.0",
+        "adjustedcount": "0.1",
+        "year": "2020"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "nsdi",
+        "count": "1.0",
+        "adjustedcount": "0.125",
+        "year": "2004"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "nsdi",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2009"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "nsdi",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2011"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "oopsla",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2020"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "osdi",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2002"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "osdi",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2010"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "pldi",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2013"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sensys",
+        "count": "1.0",
+        "adjustedcount": "0.11111",
+        "year": "2006"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sensys",
+        "count": "1.0",
+        "adjustedcount": "0.14286",
+        "year": "2009"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2002"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2003"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2005"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "2.0",
+        "adjustedcount": "0.83333",
+        "year": "2006"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "3.0",
+        "adjustedcount": "1.0833",
+        "year": "2008"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "3.0",
+        "adjustedcount": "0.97619",
+        "year": "2009"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2010"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2011"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2013"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "2.0",
+        "adjustedcount": "0.45833",
+        "year": "2014"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.11111",
+        "year": "2015"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.16667",
+        "year": "2017"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "2.0",
+        "adjustedcount": "0.58333",
+        "year": "2018"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.14286",
+        "year": "2019"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "5.0",
+        "adjustedcount": "1.0611",
+        "year": "2020"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2021"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sosp",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2007"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sosp",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2013"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "ubicomp",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2018"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2004"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "2.0",
+        "adjustedcount": "0.40476",
+        "year": "2005"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "2.0",
+        "adjustedcount": "0.75",
+        "year": "2006"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "2.0",
+        "adjustedcount": "0.41667",
+        "year": "2007"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2008"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2009"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "4.0",
+        "adjustedcount": "0.95",
+        "year": "2010"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2011"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "2.0",
+        "adjustedcount": "0.45",
+        "year": "2012"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "3.0",
+        "adjustedcount": "0.89286",
+        "year": "2013"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2014"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "3.0",
+        "adjustedcount": "0.44359",
+        "year": "2015"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "3.0",
+        "adjustedcount": "0.66667",
+        "year": "2016"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "4.0",
+        "adjustedcount": "0.875",
+        "year": "2017"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "2.0",
+        "adjustedcount": "0.33333",
+        "year": "2018"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "3.0",
+        "adjustedcount": "0.60476",
+        "year": "2019"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2020"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "3.0",
+        "adjustedcount": "0.625",
+        "year": "2021"
+    },
+    {
+        "name": "Samuel Madden",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "www",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2010"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "chiconf",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2018"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "chiconf",
+        "count": "2.0",
+        "adjustedcount": "0.3",
+        "year": "2019"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "eurosys",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2013"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icde",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2013"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icde",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2020"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "kdd",
+        "count": "1.0",
+        "adjustedcount": "0.125",
+        "year": "2019"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "mobisys",
+        "count": "1.0",
+        "adjustedcount": "0.1",
+        "year": "2020"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "nips",
+        "count": "1.0",
+        "adjustedcount": "0.058824",
+        "year": "2019"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2008"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2010"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2011"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "3.0",
+        "adjustedcount": "0.50952",
+        "year": "2013"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "2.0",
+        "adjustedcount": "0.41667",
+        "year": "2014"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2015"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "2.0",
+        "adjustedcount": "0.45",
+        "year": "2016"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "2.0",
+        "adjustedcount": "0.41667",
+        "year": "2017"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2018"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "4.0",
+        "adjustedcount": "1.0111",
+        "year": "2019"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "7.0",
+        "adjustedcount": "1.3444",
+        "year": "2020"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "4.0",
+        "adjustedcount": "0.67063",
+        "year": "2021"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "1.0",
+        "adjustedcount": "0.16667",
+        "year": "2007"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "2.0",
+        "adjustedcount": "0.34091",
+        "year": "2009"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "1.0",
+        "adjustedcount": "0.16667",
+        "year": "2011"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2012"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "3.0",
+        "adjustedcount": "0.41978",
+        "year": "2015"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2016"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "3.0",
+        "adjustedcount": "0.78333",
+        "year": "2017"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "1.0",
+        "adjustedcount": "1.0",
+        "year": "2018"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "3.0",
+        "adjustedcount": "0.48611",
+        "year": "2019"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "3.0",
+        "adjustedcount": "0.54167",
+        "year": "2020"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "4.0",
+        "adjustedcount": "1.3304",
+        "year": "2021"
+    },
+    {
+        "name": "Tim Kraska",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "www",
+        "count": "1.0",
+        "adjustedcount": "0.16667",
+        "year": "2009"
+    }
+]
