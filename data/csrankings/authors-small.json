@@ -830,5 +830,661 @@
         "count": "1.0",
         "adjustedcount": "0.16667",
         "year": "2009"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "aaai",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2008"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "chiconf",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2004"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "chiconf",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2010"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "chiconf",
+        "count": "3.0",
+        "adjustedcount": "0.75",
+        "year": "2011"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "chiconf",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2012"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "chiconf",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2014"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "chiconf",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2015"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "chiconf",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2018"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "chiconf",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2019"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "chiconf",
+        "count": "2.0",
+        "adjustedcount": "0.45",
+        "year": "2020"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "ec",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2005"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "focs",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "1991"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "focs",
+        "count": "1.0",
+        "adjustedcount": "1.0",
+        "year": "1993"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "focs",
+        "count": "2.0",
+        "adjustedcount": "0.83333",
+        "year": "1994"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "focs",
+        "count": "1.0",
+        "adjustedcount": "0.090909",
+        "year": "1999"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "focs",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2000"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "focs",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2002"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "focs",
+        "count": "1.0",
+        "adjustedcount": "0.16667",
+        "year": "2003"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "focs",
+        "count": "1.0",
+        "adjustedcount": "1.0",
+        "year": "2016"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "focs",
+        "count": "1.0",
+        "adjustedcount": "1.0",
+        "year": "2017"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "icml",
+        "count": "2.0",
+        "adjustedcount": "0.5",
+        "year": "2003"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "mobicom",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2000"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "naacl",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2007"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "naacl",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2009"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "nips",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2011"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "nsdi",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2006"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "pets",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2003"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "pldi",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "1997"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigcomm",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2001"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigcomm",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2006"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigir",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "1992"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigir",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "1993"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigir",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2003"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigir",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2006"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmetrics",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2013"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2005"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sigmod",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2016"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "soda",
+        "count": "1.0",
+        "adjustedcount": "1.0",
+        "year": "1993"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "soda",
+        "count": "2.0",
+        "adjustedcount": "1.3333",
+        "year": "1994"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "soda",
+        "count": "2.0",
+        "adjustedcount": "0.7",
+        "year": "1997"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "soda",
+        "count": "3.0",
+        "adjustedcount": "1.7",
+        "year": "1998"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "soda",
+        "count": "2.0",
+        "adjustedcount": "0.75",
+        "year": "2001"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "soda",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2004"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "soda",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2005"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "soda",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2006"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "soda",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2007"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "soda",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2008"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "soda",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2009"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "soda",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2017"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "sosp",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2001"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "stoc",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "1993"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "stoc",
+        "count": "1.0",
+        "adjustedcount": "1.0",
+        "year": "1994"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "stoc",
+        "count": "3.0",
+        "adjustedcount": "1.8333",
+        "year": "1995"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "stoc",
+        "count": "2.0",
+        "adjustedcount": "1.5",
+        "year": "1996"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "stoc",
+        "count": "2.0",
+        "adjustedcount": "1.1667",
+        "year": "1997"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "stoc",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "1998"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "stoc",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "1999"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "stoc",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2002"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "stoc",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2009"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "stoc",
+        "count": "1.0",
+        "adjustedcount": "1.0",
+        "year": "2016"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "stoc",
+        "count": "1.0",
+        "adjustedcount": "1.0",
+        "year": "2020"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "ubicomp",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2002"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "uist",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2006"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "uist",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2007"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "uist",
+        "count": "1.0",
+        "adjustedcount": "0.14286",
+        "year": "2008"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "uist",
+        "count": "1.0",
+        "adjustedcount": "0.125",
+        "year": "2010"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "uist",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2011"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "uist",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2014"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "uist",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2016"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "uist",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2018"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "uist",
+        "count": "2.0",
+        "adjustedcount": "0.5",
+        "year": "2021"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "usenixsec",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2002"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vis",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2013"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2011"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "1.0",
+        "adjustedcount": "0.2",
+        "year": "2012"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "vldb",
+        "count": "1.0",
+        "adjustedcount": "0.16667",
+        "year": "2020"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "wine",
+        "count": "1.0",
+        "adjustedcount": "0.25",
+        "year": "2005"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "www",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2004"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "www",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2005"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "www",
+        "count": "1.0",
+        "adjustedcount": "0.33333",
+        "year": "2007"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "www",
+        "count": "2.0",
+        "adjustedcount": "0.45",
+        "year": "2010"
+    },
+    {
+        "name": "David R. Karger",
+        "dept": "Massachusetts Institute of Technology",
+        "area": "www",
+        "count": "1.0",
+        "adjustedcount": "0.5",
+        "year": "2013"
     }
 ]
