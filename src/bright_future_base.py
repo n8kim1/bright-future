@@ -7,9 +7,8 @@ with open('../data/csrankings/authors-small.json') as f:
 with open('../data/csrankings/area-counts-small.json') as f:
     area_counts = json.load(f)
 
-a = 33
 
-def load_df_authors():
+def load_df_works():
     df_authors = pd.DataFrame.from_dict(authors)
     aicolor = "#32CD32"  # limegreen
     syscolor = "#00bfff"  # blue
@@ -18,6 +17,7 @@ def load_df_authors():
     nacolor = "#d3d3d3"  # light gray
     nocolor = "#ffffff"  # white = no co-authors (making it invisible)
 
+    # map area (subarea, publication, etc) to title (field)
     areaList = [
         {"area": "ai", "title": "AI", "color": aicolor},
         {"area": "aaai", "title": "AI", "color": aicolor},
@@ -135,6 +135,9 @@ def load_df_authors():
     # for the rest of the strings
     df_authors = df_authors.convert_dtypes()
 
+    # rename some columns, for clarity
+    df_authors = df_authors.rename(columns={"title": "field", "name": "author"})
+
 
     return df_authors
 
@@ -142,3 +145,86 @@ def load_award_winners():
     award_winners = {"Kraska Krown": {2021: "Tim Kraska",} , "Madden Memorial (RIP Sam) Award": {2020: "Samuel Madden",} ,
     "6.S079 Prof Award": {2021: "Tim Kraska", 2020: "Samuel Madden",}}
     return award_winners
+
+# FILTERS
+
+def filter_works(df_works, author=None, year=None):
+    if author is not None:
+        df_works = df_works[(df_works['author'] == author)]
+    if year is not None:
+        df_works = df_works[(df_works['year']==year)]
+    return df_works
+
+def get_works_by_author(df_works, author):
+    return filter_works(df_works, author = author, year= None)
+
+# AGGREGATORS
+
+def group_works_by_field(df_works):
+    return df_works.groupby('field').sum()
+
+# TODO option for raw count or adjusted count
+def count_works_by_field(df_works):
+    grouped = group_works_by_field(df_works)
+    return grouped['count'].to_dict()
+
+def count_works_by_field_filter_name(df_works, author):
+    return count_works_by_field(get_works_by_author(df_works, author))
+
+
+# SIMILARITY STUFF
+
+from sklearn.feature_extraction import DictVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+# Group works by feild, (optionally filter years), then run similarity on the counts by field.
+# Compute similarity by area or field? should use option
+def similarity_works(df_works_1, df_works_2, metric='cosine', adjusted = False):
+    # note title -> field, bad naming
+    works_by_title_1 = count_works_by_field(df_works_1)
+    works_by_title_2 = count_works_by_field(df_works_2)
+    v = DictVectorizer()
+    works_stacked = [works_by_title_1, works_by_title_2]
+    works_encoded = v.fit_transform(works_stacked)
+    # print(works_by_title_1, works_by_title_2)
+    return cosine_similarity(works_encoded)[0][1]
+
+# A wrapper around similarity_works, when you're only needing authors
+def similarity_by_author(df_works, author_1, author_2, year=None, metric='cosine', adjusted = False):
+    df_works_1 = filter_works(df_works, author=author_1, year=year)
+    df_works_2 = filter_works(df_works, author=author_2, year=year)
+    return similarity_works(df_works_1, df_works_2, metric=metric, adjusted = adjusted)
+
+
+# MACHINE LEARNING
+
+# well, i'm trying
+# TODO nathan get this working pls
+
+from sklearn.linear_model import SGDClassifier
+def train_classifier(df_works, train_data_X, train_data_y):
+    w1= count_works_by_field_filter_name(df_works, 'Tim Kraska')
+    w2=count_works_by_field_filter_name(df_works, 'Samuel Madden')
+    w3 = count_works_by_field_filter_name(df_works, 'David R. Karger')
+
+    works_stacked = [w1, w2, w3]
+    v = DictVectorizer()
+    works_encoded = v.fit_transform(works_stacked)
+
+    lin_sgd = SGDClassifier(loss='log')
+    lin_sgd.fit(works_encoded[0:3], [0, 1, 0])
+
+    return lin_sgd
+
+def predict_classifier(classifier, predict_data_X):
+    w1= count_works_by_field('Tim Kraska')
+    w2=count_works_by_field('Samuel Madden')
+    w3 = count_works_by_field('David R. Karger')
+
+    works_stacked = [w1, w2, w3]
+    v = DictVectorizer()
+    works_encoded = v.fit_transform(works_stacked)
+
+
+    return classifier.predict_proba(works_encoded[0])
+
