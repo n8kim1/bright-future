@@ -2,14 +2,20 @@ import numpy as np
 import pandas as pd
 import json
 with open('../data/csrankings/authors-small.json') as f:
+    authors_small = json.load(f)
+
+with open('../data/csrankings/authors.json') as f:
     authors = json.load(f)
 
 with open('../data/csrankings/area-counts-small.json') as f:
-    area_counts = json.load(f)
+    area_counts_small = json.load(f)
 
 
-def load_df_works():
-    df_authors = pd.DataFrame.from_dict(authors)
+def load_df_works(small=True):
+    if small:
+        df_authors = pd.DataFrame.from_dict(authors_small)
+    else:
+        df_authors = pd.DataFrame.from_dict(authors)
     aicolor = "#32CD32"  # limegreen
     syscolor = "#00bfff"  # blue
     theorycolor = "#ffff00"  # yellow
@@ -202,6 +208,7 @@ def similarity_by_author(df_works, author_1, author_2, year=None, metric='cosine
 # TODO nathan get this working pls
 
 from sklearn.linear_model import SGDClassifier
+# TODO this should really just take in stacked dfs (dictionaries? idk) and arrays.
 def train_classifier(df_works, train_data_X, train_data_y):
     w1= count_works_by_field_filter_name(df_works, 'Tim Kraska')
     w2=count_works_by_field_filter_name(df_works, 'Samuel Madden')
