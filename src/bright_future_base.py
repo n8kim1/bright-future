@@ -105,6 +105,7 @@ def load_df_works(small=True):
         {"area": "wine", "title": "Econ", "color": theorycolor},
         {"area": "graph", "title": "Graphics", "color": intercolor},
         {"area": "siggraph", "title": "Graphics", "color": intercolor},
+        {"area": "siggraph-asia", "title": "Graphics", "color": intercolor},
         {"area": "chi", "title": "HCI", "color": intercolor},
         {"area": "chiconf", "title": "HCI", "color": intercolor},
         {"area": "uist", "title": "HCI", "color": intercolor},
@@ -125,6 +126,7 @@ def load_df_works(small=True):
         {"area": "vis", "title": "Visualization", "color": intercolor},
         {"area": "vr", "title": "Visualization", "color": intercolor},
         {"area": "na", "title": "Other", "color": nacolor},
+        {"area": np.nan, "title": "Other", "color": nacolor},
     ]
     area_dict = {}
     for d in areaList:
@@ -137,7 +139,8 @@ def load_df_works(small=True):
     # interpret numerical correctly
     df_authors['count'] = df_authors['count'].astype(float)
     df_authors['adjustedcount'] = df_authors['adjustedcount'].astype(float)
-    df_authors['year'] = df_authors['year'].astype(int)
+    # Tried to use int, but NaN exists, so use float
+    df_authors['year'] = df_authors['year'].astype(float)
     # for the rest of the strings
     df_authors = df_authors.convert_dtypes()
 
