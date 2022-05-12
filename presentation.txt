@@ -1,0 +1,15 @@
+Motivation: It's important to be able to quickly make predictions about things that
+matter in academics like awards, which could impact tenure. We could also imagine
+trying to predict a PhD student's productivity, etc.
+
+One of the big problems with building a model is collecting data and no such easily
+available dataset exists in this field. Therefore, having an application that has useful data
+on people already would be very valuable.
+
+The next issue is that modeling is a specific skill that requires some expertise.
+It's nice to have an automated system that builds models based on predictors in a
+sensible fashion.
+
+Our goal is to build a plug-and-play system where administrators can add their own
+proprietary data and combine it with the publicly available datasets already
+pre-loaded in the app in order to make predictions.
