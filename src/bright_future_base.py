@@ -147,6 +147,14 @@ def load_awards():
 
 
 def load_df_works(small=False, grouped_by=None):
+    """
+    Function to load a DataFrame of publications by author
+    Input:
+    small = True loads a toy dataset, useful for debugging
+    grouped_by states which column name to group by
+    Output:
+    DataFrame
+    """
     if small:
         df_authors = pd.DataFrame.from_dict(authors_small)
     else:
@@ -167,6 +175,10 @@ def load_df_works(small=False, grouped_by=None):
 
     if grouped_by == "author":
         df_authors = df_authors.groupby("author").sum().reset_index()
+    if grouped_by == "field":
+        df_authors = df_authors.groupby("field").sum().reset_index()
+    if grouped_by == "area":
+        df_authors = df_authors.groupby("area").sum().reset_index()
 
     return df_authors
 
