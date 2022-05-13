@@ -31,4 +31,8 @@ Utilise `group_works_by_field()` to load get publication counts by field.
 
 ### Data Merging
 
-Utilise `merge_datasets(datasets)` to cleanly merge datasets (try ["works", "awards"]).
+Utilise `merge_datasets(datasets)` to cleanly merge datasets (try `["works", "awards"]`).
+
+### Similarity Metric
+
+Utilise `similarity_by_author(author_1, author_2)`  to get a Cosine Similarity metric for the authors' publications. Try "Samuel Madden" and "Tim Kraska".
