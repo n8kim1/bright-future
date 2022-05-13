@@ -154,8 +154,7 @@ def load_df_works(small=False, grouped_by=None):
 
     df_authors['title'] = df_authors['area'].apply(lambda area: area_dict[area])
 
-    # coerce datatypes
-    # interpret numerical correctly
+    # coerce datatypes and interpret numericals correctly
     df_authors['count'] = df_authors['count'].astype(float)
     df_authors['adjustedcount'] = df_authors['adjustedcount'].astype(float)
     # Tried to use int, but NaN exists, so use float
@@ -249,11 +248,22 @@ def count_works_by_field_filter_name(df_works, author):
     return count_works_by_field(get_works_by_author(df_works, author))
 
 
-# SIMILARITY STUFF
+# MERGER
 
+def merge_datasets(datasets):
+    if sorted(datasets) == ["awards", "works"]:
+        df_works_author = load_df("works", grouped_by="author")
+        df_awards_author = load_df("awards", grouped_by="author")
+        merged_df = df_works_author.merge(df_awards_author, on="author", how="left")
+        merged_df = merged_df.fillna(0).drop(columns=["year"])
+        return merged_df
+
+
+# SIMILARITY STUFF
 
 # Group works by feild, (optionally filter years), then run similarity on the counts by field.
 # Compute similarity by area or field? should use option
+
 
 def similarity_works(df_works_1, df_works_2, metric='cosine', adjusted=False):
     # note title -> field, bad naming
@@ -275,9 +285,6 @@ def similarity_by_author(df_works, author_1, author_2, year=None, metric='cosine
 
 
 # MACHINE LEARNING
-
-# well, i'm trying
-# TODO nathan get this working pls
 
 # TODO this should really just take in stacked dfs (dictionaries? idk) and arrays.
 
