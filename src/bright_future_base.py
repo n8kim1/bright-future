@@ -271,8 +271,6 @@ def get_works_by_author(df_works, author):
 def group_works_by_field(df_works):
     return df_works.groupby('field').sum()
 
-# TODO option for raw count or adjusted count
-
 
 def count_works_by_field(df_works):
     grouped = group_works_by_field(df_works)
@@ -320,9 +318,6 @@ def similarity_by_author(df_works, author_1, author_2, year=None, metric='cosine
 
 
 # MACHINE LEARNING
-
-# TODO this should really just take in stacked dfs (dictionaries? idk) and arrays.
-
 
 def train_classifier(df_works, train_data_X, train_data_y):
     w1 = count_works_by_field_filter_name(df_works, 'Tim Kraska')
