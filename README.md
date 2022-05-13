@@ -28,3 +28,7 @@ Utilise `get_works_by_author(author)` to load get an author's publications (try 
 ### Data Aggregation
 
 Utilise `group_works_by_field()` to load get publication counts by field.
+
+### Data Merging
+
+Utilise `merge_datasets(datasets)` to cleanly merge datasets (try ["works", "awards"]).
