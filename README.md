@@ -24,3 +24,7 @@ Utilise `load_df(dataset, grouped_by)` to load a dataset (try "profs", "awards",
 ### Data Filtering
 
 Utilise `get_works_by_author(author)` to load get an author's publications (try "Samuel Madden").
+
+### Data Aggregation
+
+Utilise `group_works_by_field()` to load get publication counts by field.

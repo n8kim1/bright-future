@@ -270,7 +270,8 @@ def get_works_by_author(author):
 # AGGREGATORS
 
 
-def group_works_by_field(df_works):
+def group_works_by_field():
+    df_works = load_df("works")
     return df_works.groupby('field').sum()
 
 # TODO option for raw count or adjusted count
