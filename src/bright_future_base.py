@@ -20,6 +20,12 @@ with open('../data/profs.tsv') as f:
 awards_data_full = pd.read_csv('../data/awards-data.tsv', sep='\t', header=0)
 
 
+aicolor = "#32CD32"  # limegreen
+syscolor = "#00bfff"  # blue
+theorycolor = "#ffff00"  # yellow
+intercolor = "#ffc0cb"  # pink
+nacolor = "#d3d3d3"  # light gray
+nocolor = "#ffffff"  # white = no co-authors (making it invisible)
 # map area (subarea, publication, etc) to title (field)
 areaList = [
     {"area": "ai", "title": "AI", "color": aicolor},
@@ -145,12 +151,6 @@ def load_df_works(small=False, grouped_by=None):
         df_authors = pd.DataFrame.from_dict(authors_small)
     else:
         df_authors = pd.DataFrame.from_dict(authors)
-    aicolor = "#32CD32"  # limegreen
-    syscolor = "#00bfff"  # blue
-    theorycolor = "#ffff00"  # yellow
-    intercolor = "#ffc0cb"  # pink
-    nacolor = "#d3d3d3"  # light gray
-    nocolor = "#ffffff"  # white = no co-authors (making it invisible)
 
     df_authors['title'] = df_authors['area'].apply(lambda area: area_dict[area])
 
@@ -167,7 +167,7 @@ def load_df_works(small=False, grouped_by=None):
     df_authors = df_authors.rename(columns={"title": "field", "name": "author"})
 
     if grouped_by == "author":
-        df_authors = df_works.groupby("author").sum().reset_index()
+        df_authors = df_authors.groupby("author").sum().reset_index()
 
     return df_authors
 
