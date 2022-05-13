@@ -140,7 +140,7 @@ def load_awards():
     return awards_data_full
 
 
-def load_df_works(small=True, grouped_by=None):
+def load_df_works(small=False, grouped_by=None):
     if small:
         df_authors = pd.DataFrame.from_dict(authors_small)
     else:
@@ -208,6 +208,14 @@ def load_df_profs(grouped_by=None):
     df_prof["is_doctorate_top_10"] = df_prof["Doctorate"].isin(uni_rankings).astype(int)
     return df_prof
 
+
+def load_df(dataset, grouped_by=None):
+    if dataset == "profs":
+        return load_df_profs(grouped_by=grouped_by)
+    elif dataset == "awards":
+        return load_df_awards(grouped_by=grouped_by)
+    elif dataset == "works":
+        return load_df_works(small=False, grouped_by=grouped_by)
 
 # FILTERS
 
