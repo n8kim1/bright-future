@@ -13,6 +13,11 @@ with open('../data/csrankings/authors.json') as f:
 with open('../data/csrankings/area-counts-small.json') as f:
     area_counts_small = json.load(f)
 
+with open('../data/profs.tsv') as f:
+    profs = pd.read_csv('../data/profs.tsv', sep='\t', header=0)
+
+def load_profs():
+    return profs
 
 def load_df_works(small=True):
     if small:
