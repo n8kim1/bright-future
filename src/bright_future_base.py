@@ -314,7 +314,18 @@ def merge_datasets(datasets):
         merged_df = df_works_author.merge(df_awards_author, on="author", how="left")
         merged_df = merged_df.fillna(0).drop(columns=["year"])
         return merged_df
-
+    if sorted(datasets) == ["profs", "works"]:
+        df_prof = load_df("profs")
+        df_works = load_df("works")
+        merged = df_works.merge(df_prof, left_on='author', right_on='Fullname', how='inner')
+        merged = merged.drop(columns=["Fullname"])
+        return merged
+    if sorted(datasets) == ["awards", "profs"]:
+        df_profs = load_df("profs")
+        df_awards = load_df("awards")
+        merged = df_awards.merge(df_profs, left_on='author', right_on='Fullname', how='inner')
+        merged = merged.drop(columns=["Fullname"])
+        return merged
 
 # SIMILARITY STUFF
 
