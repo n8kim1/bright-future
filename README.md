@@ -19,4 +19,8 @@ Start off with
 
 ### Data Loading
 
-Utilise `load_df(dataset, grouped_by)` to loads a dataset (try "profs", "awards", or "works") and optionally a `grouped_by` argument (try "author").
+Utilise `load_df(dataset, grouped_by)` to load a dataset (try "profs", "awards", or "works") and optionally a `grouped_by` argument (try "author").
+
+### Data Filtering
+
+Utilise `get_works_by_author(author)` to load get an author's publications (try "Samuel Madden").

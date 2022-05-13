@@ -263,7 +263,8 @@ def filter_works(df_works, author=None, year=None):
     return df_works
 
 
-def get_works_by_author(df_works, author):
+def get_works_by_author(author):
+    df_works = load_df("works")
     return filter_works(df_works, author=author, year=None)
 
 # AGGREGATORS
@@ -358,7 +359,7 @@ def model_builder(data, responder, predictors, display="best", thresh=1.1):
         # if this represents a 10% bump in r2 then use it
 
         if display == 'all':
-            # display the best generated model for any round of iteration, 
+            # display the best generated model for any round of iteration,
             # even if its not the best across all rounds.
             print("Iteration's best model Features:", features_best_prospective)
             print("Iteration's best model r2:", r2_best_prospective)
@@ -373,7 +374,7 @@ def model_builder(data, responder, predictors, display="best", thresh=1.1):
         else:
             # not a sufficient boost. terminate with the previous best; this round of search produced nothing
             break
-    
+
     print("Overall Best model Features:", features_chosen)
     print("Overall Best model summary:")
     print(res_best.summary())
