@@ -7,6 +7,8 @@ The second example demonstrates how in just 2 lines of code, BrightFuture loads 
 
 ## Example Usage
 
+Clone the repo with `git clone git@github.com:n8kim1/bright-future.git` and then try these in a Python file or Jupyter notebook within `src/`.
+
 Start off with
 
     import numpy as np
