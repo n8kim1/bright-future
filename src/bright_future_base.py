@@ -237,6 +237,13 @@ def load_df_profs(grouped_by=None):
 
 
 def load_df(dataset, grouped_by=None):
+    """
+    Function to load a dataset as asked for by the user
+    Input:
+    grouped_by states which column name to group by
+    Output:
+    DataFrame
+    """
     if dataset == "profs":
         return load_df_profs(grouped_by=grouped_by)
     elif dataset == "awards":
