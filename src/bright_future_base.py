@@ -193,15 +193,31 @@ def load_award_winners():
 
 
 def load_df_awards(grouped_by=None):
+    """
+    Function to load a DataFrame of Best Paper awards
+    Input:
+    grouped_by states which column name to group by
+    Output:
+    DataFrame
+    """
     df = pd.read_csv('../data/awards-data.tsv', sep='\t', header=0)
     df = df.rename(columns={"author-name": "author"})
     if grouped_by == "author":
         df = df.assign(award_count=1).groupby(
             "author").sum().drop(columns=["year"]).reset_index()
+    if grouped_by == "journal":
+        df = df.groupby("journal").sum().reset_index()
     return df
 
 
 def load_df_profs(grouped_by=None):
+    """
+    Function to load a DataFrame of Professorship
+    Input:
+    grouped_by states which column name to group by
+    Output:
+    DataFrame
+    """
     df_prof = pd.read_csv('../data/profs.tsv', sep='\t', header=0)
     uni_rankings = ["Massachusetts Institute of Technology",
                     "Carnegie Mellon University",
