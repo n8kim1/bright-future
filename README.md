@@ -7,6 +7,8 @@ The second example demonstrates how in just 2 lines of code, BrightFuture loads 
 
 ## Directory Structure
 
+The important files are organized as
+
     ├── data
     │   ├── awards-data-messy.tsv
     │   ├── awards-data.tsv
@@ -18,28 +20,11 @@ The second example demonstrates how in just 2 lines of code, BrightFuture loads 
     │   ├── profs.html
     │   ├── profs.tsv
     │   └── uni_rankings.tsv
-    ├── presentation.txt
-    ├── README.md
     ├── src
-    │   ├── awards_data_viz.ipynb
     │   ├── bright_future_base.py
-    │   ├── clean_awards.ipynb
     │   ├── Final Report Examples.ipynb
-    │   ├── Predictions.ipynb
-    │   ├── __pycache__
-    │   │   └── bright_future_base.cpython-36.pyc
-    │   ├── raw_data_viz.ipynb
-    │   ├── similarity_demo.ipynb
-    │   └── Wrapper Functions.ipynb
     └── viz
-        ├── architecture.png
-        ├── authors-count-field.JPG
-        ├── authors-count-institute.JPG
-        ├── authors-count-year.JPG
-        ├── authors-sample-entry.JPG
-        ├── paper-journals.png
-        ├── professors-doctorate.JPG
-        └── professors-working.JPG
+        ├── data visualizations
 
 ## Example Usage
 
