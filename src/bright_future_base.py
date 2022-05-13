@@ -255,7 +255,9 @@ def load_df(dataset, grouped_by=None):
 # FILTERS
 
 
-def filter_works(df_works, author=None, year=None):
+def filter_works(df_works=None, author=None, year=None):
+    if df_works is None:
+        df_works = load_df("works")
     if author is not None:
         df_works = df_works[(df_works['author'] == author)]
     if year is not None:
@@ -263,21 +265,25 @@ def filter_works(df_works, author=None, year=None):
     return df_works
 
 
-def get_works_by_author(author):
-    df_works = load_df("works")
+def get_works_by_author(author, df_works=None):
+    if df_works is None:
+        df_works = load_df("works")
     return filter_works(df_works, author=author, year=None)
 
 # AGGREGATORS
 
 
-def group_works_by_field():
-    df_works = load_df("works")
+def group_works_by_field(df_works=None):
+    if df_works is None:
+        df_works = load_df("works")
     return df_works.groupby('field').sum()
 
 # TODO option for raw count or adjusted count
 
 
-def count_works_by_field(df_works):
+def count_works_by_field(df_works=None):
+    if df_works is None:
+        df_works = load_df("works")
     grouped = group_works_by_field(df_works)
     return grouped['count'].to_dict()
 
@@ -316,7 +322,9 @@ def similarity_works(df_works_1, df_works_2, metric='cosine', adjusted=False):
 # A wrapper around similarity_works, when you're only needing authors
 
 
-def similarity_by_author(df_works, author_1, author_2, year=None, metric='cosine', adjusted=False):
+def similarity_by_author(author_1, author_2, df_works=None, year=None, metric='cosine', adjusted=False):
+    if not df_works:
+        df_works = load_df("works")
     df_works_1 = filter_works(df_works, author=author_1, year=year)
     df_works_2 = filter_works(df_works, author=author_2, year=year)
     return similarity_works(df_works_1, df_works_2, metric=metric, adjusted=adjusted)
