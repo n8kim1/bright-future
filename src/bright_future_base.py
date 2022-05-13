@@ -8,7 +8,7 @@ import statsmodels.api as sm
 with open('../data/csrankings/authors-small.json') as f:
     authors_small = json.load(f)
 
-with open('../data/csrankings/authors.json') as f:
+with open('../data/csrankings/authors.json', encoding='UTF-8') as f:
     authors = json.load(f)
 
 with open('../data/csrankings/area-counts-small.json') as f:
