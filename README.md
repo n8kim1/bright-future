@@ -36,3 +36,14 @@ Utilise `merge_datasets(datasets)` to cleanly merge datasets (try `["works", "aw
 ### Similarity Metric
 
 Utilise `similarity_by_author(author_1, author_2)`  to get a Cosine Similarity metric for the authors' publications. Try "Samuel Madden" and "Tim Kraska".
+
+### Automated Modeling
+
+Utilise `model_builder(data, responder, predictors, display="best", thresh=1.1)` to automatically build a model and display either "all" models or the "best". Play around with the threshold for how stringent and R2 increase you want in your model.
+Example code
+
+    df_prof = bf.load_df("profs")
+    best_model = bf.model_builder(data=df_prof,
+                responder="is_uni_top_10",
+                predictors=["is_bachelors_top_10", "is_doctorate_top_10"],
+                display="all", thresh = 1.0)
