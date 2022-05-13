@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 import json
 import statsmodels.api as sm
+
 with open('../data/csrankings/authors-small.json') as f:
     authors_small = json.load(f)
 
@@ -140,10 +141,16 @@ for d in areaList:
 
 
 def load_profs():
+    """
+    Internal helper function
+    """
     return profs
 
 
 def load_awards():
+    """
+    Internal helper function
+    """
     return awards_data_full
 
 
@@ -185,9 +192,9 @@ def load_df_works(small=False, grouped_by=None):
 
 
 def load_award_winners():
-    '''
+    """""
     Toy dataset
-    '''
+    """
     award_winners = {"Kraska Krown": {2021: "Tim Kraska", }, "Madden Memorial (RIP Sam) Award": {2020: "Samuel Madden", },
                      "6.S079 Prof Award": {2021: "Tim Kraska", 2020: "Samuel Madden", }}
     return award_winners
@@ -269,6 +276,15 @@ def load_df(dataset, grouped_by=None):
 
 
 def filter_works(df_works=None, author=None, year=None):
+    """
+    Filter based on given arguments
+    Input:
+    df_works
+    author
+    year
+    Output:
+    Filtered DataFrame
+    """
     if df_works is None:
         df_works = load_df("works")
     if author is not None:
@@ -279,6 +295,15 @@ def filter_works(df_works=None, author=None, year=None):
 
 
 def get_works_by_author(author, df_works=None):
+    """
+    Filter based on given arguments
+    Input:
+    author
+    df_works
+    year
+    Output:
+    Filtered DataFrame
+    """
     if df_works is None:
         df_works = load_df("works")
     return filter_works(df_works, author=author, year=None)
@@ -287,6 +312,13 @@ def get_works_by_author(author, df_works=None):
 
 
 def group_works_by_field(df_works=None):
+    """
+    Group based on given arguments
+    Input:
+    df_works
+    Output:
+    Grouped DataFrame, summed
+    """
     if df_works is None:
         df_works = load_df("works")
     return df_works.groupby('field').sum()
@@ -295,6 +327,13 @@ def group_works_by_field(df_works=None):
 
 
 def count_works_by_field(df_works=None):
+    """
+    Count works by each field
+    Input:
+    df_works
+    Output:
+    Dictionary of grouped DataFrame, summed
+    """
     if df_works is None:
         df_works = load_df("works")
     grouped = group_works_by_field(df_works)
@@ -302,12 +341,27 @@ def count_works_by_field(df_works=None):
 
 
 def count_works_by_field_filter_name(df_works, author):
+    """
+    Count works by each field and author
+    Input:
+    df_works
+    author
+    Output:
+    Dictionary of grouped DataFrame, summed
+    """
     return count_works_by_field(get_works_by_author(df_works, author))
 
 
 # MERGER
 
 def merge_datasets(datasets):
+    """
+    Merge any two datasets
+    Input:
+    List of two datasets
+    Output:
+    Merged DataFrame
+    """
     if sorted(datasets) == ["awards", "works"]:
         df_works_author = load_df("works", grouped_by="author")
         df_awards_author = load_df("awards", grouped_by="author")
@@ -334,6 +388,9 @@ def merge_datasets(datasets):
 
 
 def similarity_works(df_works_1, df_works_2, metric='cosine', adjusted=False):
+    """
+    Internal Helper Function
+    """
     # note title -> field, bad naming
     works_by_title_1 = count_works_by_field(df_works_1)
     works_by_title_2 = count_works_by_field(df_works_2)
@@ -347,6 +404,18 @@ def similarity_works(df_works_1, df_works_2, metric='cosine', adjusted=False):
 
 
 def similarity_by_author(author_1, author_2, df_works=None, year=None, metric='cosine', adjusted=False):
+    """
+    Get cosine similarity metric for two authors
+    Input:
+    author_1
+    author_2
+    df_works
+    year
+    metric = 'cosine'
+    adjusted = False
+    Output:
+    Cosine Similarity between the two authors' works in the given year (optionally)
+    """
     if not df_works:
         df_works = load_df("works")
     df_works_1 = filter_works(df_works, author=author_1, year=year)
@@ -357,6 +426,17 @@ def similarity_by_author(author_1, author_2, df_works=None, year=None, metric='c
 # MACHINE LEARNING
 
 def model_builder(data, responder, predictors, display="best", thresh=1.1):
+    """
+    Automatically build models and choose best one
+    Input:
+    data
+    responder
+    predictors
+    display = 'best' or 'all'
+    thresh
+    Output:
+    Modeling results
+    """
     features_choices = predictors
 
     features_chosen = []
@@ -418,6 +498,9 @@ def model_builder(data, responder, predictors, display="best", thresh=1.1):
 # Predictor
 
 def train_classifier(df_works, train_data_X, train_data_y):
+    """
+    Internal toy function
+    """
     w1 = count_works_by_field_filter_name(df_works, 'Tim Kraska')
     w2 = count_works_by_field_filter_name(df_works, 'Samuel Madden')
     w3 = count_works_by_field_filter_name(df_works, 'David R. Karger')
@@ -433,6 +516,9 @@ def train_classifier(df_works, train_data_X, train_data_y):
 
 
 def predict_classifier(classifier, predict_data_X):
+    """
+    Internal toy function
+    """
     w1 = count_works_by_field('Tim Kraska')
     w2 = count_works_by_field('Samuel Madden')
     w3 = count_works_by_field('David R. Karger')
