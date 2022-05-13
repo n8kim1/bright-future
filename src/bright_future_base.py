@@ -148,6 +148,14 @@ def load_awards():
 
 
 def load_df_works(small=False, grouped_by=None):
+    """
+    Function to load a DataFrame of publications by author
+    Input:
+    small = True loads a toy dataset, useful for debugging
+    grouped_by states which column name to group by
+    Output:
+    DataFrame
+    """
     if small:
         df_authors = pd.DataFrame.from_dict(authors_small)
     else:
@@ -168,6 +176,10 @@ def load_df_works(small=False, grouped_by=None):
 
     if grouped_by == "author":
         df_authors = df_authors.groupby("author").sum().reset_index()
+    if grouped_by == "field":
+        df_authors = df_authors.groupby("field").sum().reset_index()
+    if grouped_by == "area":
+        df_authors = df_authors.groupby("area").sum().reset_index()
 
     return df_authors
 
@@ -182,15 +194,31 @@ def load_award_winners():
 
 
 def load_df_awards(grouped_by=None):
+    """
+    Function to load a DataFrame of Best Paper awards
+    Input:
+    grouped_by states which column name to group by
+    Output:
+    DataFrame
+    """
     df = pd.read_csv('../data/awards-data.tsv', sep='\t', header=0)
     df = df.rename(columns={"author-name": "author"})
     if grouped_by == "author":
         df = df.assign(award_count=1).groupby(
             "author").sum().drop(columns=["year"]).reset_index()
+    if grouped_by == "journal":
+        df = df.groupby("journal").sum().reset_index()
     return df
 
 
 def load_df_profs(grouped_by=None):
+    """
+    Function to load a DataFrame of Professorship
+    Input:
+    grouped_by states which column name to group by
+    Output:
+    DataFrame
+    """
     df_prof = pd.read_csv('../data/profs.tsv', sep='\t', header=0)
     uni_rankings = ["Massachusetts Institute of Technology",
                     "Carnegie Mellon University",
@@ -210,6 +238,13 @@ def load_df_profs(grouped_by=None):
 
 
 def load_df(dataset, grouped_by=None):
+    """
+    Function to load a dataset as asked for by the user
+    Input:
+    grouped_by states which column name to group by
+    Output:
+    DataFrame
+    """
     if dataset == "profs":
         return load_df_profs(grouped_by=grouped_by)
     elif dataset == "awards":
