@@ -4,6 +4,7 @@ from sklearn.feature_extraction import DictVectorizer
 import numpy as np
 import pandas as pd
 import json
+import statsmodels.api as sm
 with open('../data/csrankings/authors-small.json') as f:
     authors_small = json.load(f)
 
@@ -286,8 +287,66 @@ def similarity_by_author(df_works, author_1, author_2, year=None, metric='cosine
 
 # MACHINE LEARNING
 
-# TODO this should really just take in stacked dfs (dictionaries? idk) and arrays.
+def model_builder(data, responder, predictors, display="best", thresh=1.1):
+    features_choices = predictors
 
+    features_chosen = []
+    features_prospective = []
+
+    res_best = None
+    r2_best_chosen = 0
+    res_best_prospective = None
+    r2_best_prospective = 0
+    features_best_prospective = None
+
+    # Iteratively build a model. (stop if the model already has all the possible features)
+    while len(features_chosen) < len(features_choices):
+        # Given the existing model, we test adding each new future, see if there's improvement, and what the best is.
+
+        # First, test adding each new feature to the existing model
+        r2_best_prospective = 0
+        for feature in features_choices:
+            # Only add _new_ features
+            if feature not in features_chosen:
+                # build features from the old set, add one
+                features_prospective = features_chosen.copy()
+                features_prospective.append(feature)
+                mod = sm.OLS(data[responder], sm.add_constant(data[features_prospective]))
+                res = mod.fit()
+
+                if res.rsquared > r2_best_prospective:
+                    r2_best_prospective = res.rsquared
+                    features_best_prospective = features_prospective
+                    res_best_prospective = res
+
+        # now we have the best prospective model, and its r2.
+        # if this represents a 10% bump in r2 then use it
+
+        if display == 'all':
+            # display the best generated model for any round of iteration, 
+            # even if its not the best across all rounds.
+            print("Iteration's best model Features:", features_best_prospective)
+            print("Iteration's best model r2:", r2_best_prospective)
+            # print("Iteration's best model summary:")
+            # print(res_best_prospective.summary())
+
+        if r2_best_prospective >= thresh * r2_best_chosen:
+            # use it! track its score too
+            r2_best_chosen = r2_best_prospective
+            features_chosen = features_best_prospective
+            res_best = res_best_prospective
+        else:
+            # not a sufficient boost. terminate with the previous best; this round of search produced nothing
+            break
+    
+    print("Overall Best model Features:", features_chosen)
+    print("Overall Best model summary:")
+    print(res_best.summary())
+
+    return res_best
+
+
+# Predictor
 
 def train_classifier(df_works, train_data_X, train_data_y):
     w1 = count_works_by_field_filter_name(df_works, 'Tim Kraska')
