@@ -237,6 +237,17 @@ def load_df_profs(grouped_by=None):
     return df_prof
 
 
+def load_df_rankings():
+    """
+    Function to load a DataFrame of Top 10 US Universities in CS
+    Output:
+    DataFrame
+    """
+    df = pd.read_csv('../data/uni_rankings.tsv', sep='\t', header=None)
+    df = df.rename(columns={0: "Rank", 1: "University"})
+    return df
+
+
 def load_df(dataset, grouped_by=None):
     """
     Function to load a dataset as asked for by the user
@@ -251,6 +262,8 @@ def load_df(dataset, grouped_by=None):
         return load_df_awards(grouped_by=grouped_by)
     elif dataset == "works":
         return load_df_works(small=False, grouped_by=grouped_by)
+    elif dataset == "uni_rankings":
+        return load_df_rankings()
 
 # FILTERS
 

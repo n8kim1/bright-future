@@ -21,7 +21,7 @@ Start off with
 
 ### Data Loading
 
-Utilise `load_df(dataset, grouped_by)` to load a dataset (try "profs", "awards", or "works") and optionally a `grouped_by` argument (try "author").
+Utilise `load_df(dataset, grouped_by)` to load a dataset (try "profs", "awards", or "works") and optionally a `grouped_by` argument (try "author"). Also try "uni_rankings" for the top 10 US universities for Computer Science.
 
 ### Data Filtering
 
