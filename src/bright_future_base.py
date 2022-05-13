@@ -21,6 +21,13 @@ def load_profs():
     return profs
 
 
+awards_data_full = pd.read_csv('../data/awards-data.tsv', sep='\t', header=0)
+
+
+def load_awards():
+    return awards_data_full
+
+
 def load_df_works(small=True):
     if small:
         df_authors = pd.DataFrame.from_dict(authors_small)
