@@ -40,7 +40,7 @@ Utilise `similarity_by_author(author_1, author_2)`  to get a Cosine Similarity m
 ### Automated Modeling
 
 Utilise `model_builder(data, responder, predictors, display="best", thresh=1.1)` to automatically build a model and display either "all" models or the "best". Play around with the threshold for how stringent and R2 increase you want in your model.
-Example code
+Example code is as below.
 
     df_prof = bf.load_df("profs")
     best_model = bf.model_builder(data=df_prof,
