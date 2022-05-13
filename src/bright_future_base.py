@@ -16,8 +16,10 @@ with open('../data/csrankings/area-counts-small.json') as f:
 with open('../data/profs.tsv') as f:
     profs = pd.read_csv('../data/profs.tsv', sep='\t', header=0)
 
+
 def load_profs():
     return profs
+
 
 def load_df_works(small=True):
     if small:
@@ -162,6 +164,32 @@ def load_award_winners():
     award_winners = {"Kraska Krown": {2021: "Tim Kraska", }, "Madden Memorial (RIP Sam) Award": {2020: "Samuel Madden", },
                      "6.S079 Prof Award": {2021: "Tim Kraska", 2020: "Samuel Madden", }}
     return award_winners
+
+
+def load_df_awards():
+    df = pd.read_csv('../data/awards-data.tsv', sep='\t', header=0)
+    df = df.rename(columns={"author-name": "author"})
+    return df
+
+
+def load_df_profs():
+    df_prof = pd.read_csv('../data/profs.tsv', sep='\t', header=0)
+    uni_rankings = ["Massachusetts Institute of Technology",
+                    "Carnegie Mellon University",
+                    "Stanford University",
+                    "University of California, Berkeley",
+                    "University of Illinois at Urbana-Champaign",
+                    "Cornell University",
+                    "Georgia Institute of Technology",
+                    "University of Washington",
+                    "Princeton University",
+                    "University of Texas at Austin"]
+
+    df_prof["is_uni_top_10"] = df_prof["University"].isin(uni_rankings).astype(int)
+    df_prof["is_bachelors_top_10"] = df_prof["Bachelors"].isin(uni_rankings).astype(int)
+    df_prof["is_doctorate_top_10"] = df_prof["Doctorate"].isin(uni_rankings).astype(int)
+    return df_prof
+
 
 # FILTERS
 
